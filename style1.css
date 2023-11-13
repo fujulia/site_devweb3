@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300&display=swap');
+
+.row{
+    height: auto;
+}
+
+.row img{
+    width: 80px;
+}
+
+.row h1,h3{
+    display: inline;
+    font-family: 'Poppins', sans-serif;
+}
+#Logo{
+    display: flex;
+    align-items: center;
+}
+
+.bx-user-circle, .bx-cart{
+    font-size: 40px;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.info{
+    margin-left: 80px;
+}
