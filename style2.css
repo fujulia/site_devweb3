@@ -1,52 +1,119 @@
-
-main{
+main {
     padding: 20px 150px;
 }
-h1{
-    color: #FFB800 ;
+
+h1 {
+    color: #FFB800;
+    font-size: 40px;
 }
-h2{
+
+h2 {
     color: #ee1d74;
+    font-size: large;
 }
-.container{
+
+.container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    
+
 }
-#produtos{
-    display:flex;
+
+#produtos {
+    display: flex;
     flex-wrap: wrap;
-    gap:30px;
-    padding:70px;
+    gap: 30px;
+    padding: 70px;
 }
-#categorias{
+
+#categorias {
     border: 2px solid black;
-    border-radius: 5%;
-    padding:20px;
+    border-radius: 10px;
+    padding: 20px;
     height: min-content;
 }
-.produto{
+
+.produto {
     display: inline;
-    flex:1;
+    flex: 1;
     max-width: min-content;
     border: 2px solid black;
-    border-radius: 5%;
-    padding:20px;
+    border-radius: 10PX;
 }
-label{
+
+label {
     display: block;
-    padding:10px;
+    padding: 10px;
 }
-span{
+
+span {
     display: block;
     font-weight: bold;
     font-size: large;
 }
-.categoria-produto{
+
+.categoria-produto {
     color: rgb(88, 88, 88);
     font-weight: bold;
     font-size: small;
 }
-del{
+.imagem{
+    position: relative;
+}
+.desconto{
+   position: absolute; 
+   border: 1px solid black;
+   color: #ffbb00;
+   background: #e4347d;
+   padding: 5px;
+   border-radius: 10px;
+   font-size: small;
+   margin-left: 140px;
+   margin-top: 5px;
+}
+.informacoes-produtos{
+    padding: 20px;
+}
+.precos {
+    margin: 15px;
+}
+
+del {
     text-align: center;
+}
+
+.preco-deletado {
+    display: block;
+    text-align: center;
+}
+
+.preco {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    color: #ee1d74;
+}
+.adicionar-produto{
+    margin-left: 15px;
+}
+.button-adicionar {
+    display: inline;
+    margin: 5px;
+    color: #ee1d74;
+    background-color: #ffcb46;
+    font-weight: bold;
+    border-radius: 10PX;
+    padding: 5px;
+}
+
+.button-adicionar>p {
+    color: #ee1d74;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.contador-adicionar {
+    display: inline;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
 }
