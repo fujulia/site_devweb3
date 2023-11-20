@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300&display=swap');
 
+:root{
+    --cor-principal:#F28888;
+    --cor-geral: white;
+}
 .row{
     height: auto;
 }
@@ -29,5 +33,16 @@
 }
 
 .info{
-    margin-left: 80px;
+    margin-left: 50%;
+}
+
+nav div{
+    background-color: var(--cor-principal);
+    height: 6vh;
+}
+
+form{
+    width: 50%;
+    margin: 10px 0 10px 35px;
+    border-radius: 20%;
 }
