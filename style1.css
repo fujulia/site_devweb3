@@ -1,48 +1,125 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300&display=swap');
 
-:root{
-    --cor-principal:#F28888;
+/* Formatação geral */
+
+:root {
+    --cor-principal: #F28888;
+    --cor-auxiliar: #F2B705;
+    --cor-detalhes: #F28DA8;
     --cor-geral: white;
-}
-.row{
-    height: auto;
+    --cor-texto: black;
+    --font: 'Poppins', sans-serif;
 }
 
-.row img{
+.topo {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+.topo img {
     width: 80px;
 }
 
-.row h1,h3{
+.topo h1,
+h3 {
     display: inline;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font);
 }
-#Logo{
+
+.topo h1 {
+    margin-bottom: 0px;
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
 
-.bx-user-circle, .bx-cart{
+.bx-user-circle,
+.bx-cart {
     font-size: 40px;
 }
 
-.info{
+.info {
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
-.info{
-    margin-left: 50%;
-}
 
-nav div{
+nav {
     background-color: var(--cor-principal);
     height: 6vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
 }
 
-form{
-    width: 50%;
-    margin: 10px 0 10px 35px;
-    border-radius: 20%;
+form {
+    margin: 10px 0 10px 20px;
+}
+
+form .search-item {
+    padding-top: 7px;
+    margin-left: 5px;
+    font-size: 25px;
+    position: absolute;
+}
+
+form .form-control {
+    text-indent: 20px;
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+form .form-control:focus {
+    border: 1px solid var(--cor-auxiliar);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--cor-principal);
+    min-width: 160px;
+    padding-top: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 15px;
+    text-decoration: none;
+    display: block;
+
+}
+
+.dropdown-content a:hover {
+    background-color: #f7bebe
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu h2 {
+    display: inline;
+    font-size: var(--font);
+    font-weight: 300;
+    font-size: 25px;
+    margin: 25px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
 }
