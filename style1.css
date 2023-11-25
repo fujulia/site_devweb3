@@ -2,6 +2,10 @@
 
 /* Formatação geral */
 
+*{
+    text-decoration: none;
+}
+
 :root {
     --cor-principal: #F28888;
     --cor-auxiliar: #F2B705;
@@ -29,6 +33,11 @@ h3 {
     font-family: var(--font);
 }
 
+h3 a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
 .topo h1 {
     margin-bottom: 0px;
 }
@@ -41,6 +50,7 @@ h3 {
 .bx-user-circle,
 .bx-cart {
     font-size: 40px;
+    color: var(--cor-texto);
 }
 
 .info {
@@ -122,4 +132,16 @@ form .form-control:focus {
 .menu {
     display: flex;
     align-items: center;
+}
+
+.carousel-inner div{
+    width: 80vw;
+}
+
+#contentCarousel{
+    width: 80vw;
+    margin: auto;
+}
+#contentCarousel button{
+    color: black;
 }
