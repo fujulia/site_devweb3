@@ -2,10 +2,6 @@
 
 /* Formatação geral */
 
-*{
-    text-decoration: none;
-}
-
 :root {
     --cor-principal: #F28888;
     --cor-auxiliar: #F2B705;
@@ -15,7 +11,20 @@
     --font: 'Poppins', sans-serif;
 }
 
-.topo {
+h3 a, h1 a, h2 a {
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.bx-user-circle,
+.bx-cart {
+    font-size: 40px;
+    color: var(--cor-texto);
+}
+/*header*/
+
+/*topo*/
+.topoSite{
     height: auto;
     width: 100vw;
     display: flex;
@@ -23,22 +32,17 @@
     padding: 0px 30px;
 }
 
-.topo img {
+.topoSite img {
     width: 80px;
 }
 
-.topo h1,
+.topoSite h1,
 h3 {
     display: inline;
     font-family: var(--font);
 }
 
-h3 a {
-    color: var(--cor-texto);
-    text-decoration: none;
-}
-
-.topo h1 {
+.topoSite h1 {
     margin-bottom: 0px;
 }
 
@@ -47,20 +51,16 @@ h3 a {
     align-items: center;
 }
 
-.bx-user-circle,
-.bx-cart {
-    font-size: 40px;
-    color: var(--cor-texto);
-}
-
-.info {
+.contato {
     display: flex;
     align-items: center;
     height: 100%;
     width: 100%;
 }
 
+/*topo fim*/
 
+/*nav*/
 nav {
     background-color: var(--cor-principal);
     height: 6vh;
@@ -94,7 +94,6 @@ form .form-control:focus {
 .dropdown {
     position: relative;
     display: inline-block;
-
 }
 
 .dropdown-content {
@@ -103,6 +102,8 @@ form .form-control:focus {
     background-color: var(--cor-principal);
     min-width: 160px;
     padding-top: 20px;
+    z-index: 10;
+    position: fixed;
 }
 
 .dropdown-content a {
@@ -110,11 +111,10 @@ form .form-control:focus {
     padding: 15px;
     text-decoration: none;
     display: block;
-
 }
 
 .dropdown-content a:hover {
-    background-color: #f7bebe
+    background-color: #ffd5d5
 }
 
 .dropdown:hover .dropdown-content {
@@ -133,15 +133,28 @@ form .form-control:focus {
     display: flex;
     align-items: center;
 }
+/*nav fim*/
+
+/*header fim*/
+
+/*main*/
 
 .carousel-inner div{
     width: 80vw;
 }
 
 #contentCarousel{
-    width: 80vw;
+    width: 80%;
     margin: auto;
+    margin-top: 5%;
+    z-index: 1;
 }
-#contentCarousel button{
-    color: black;
+
+.itens img{
+    width: 30%;
+}
+
+.itens{
+    width: 60%;
+    margin: auto;
 }
