@@ -1,15 +1,17 @@
-main {
+body {
     padding: 20px 150px;
 }
 
 .titulo-cadapio {
     color: #FFB800;
     font-size: 40px;
+    padding: 20px;
 }
 
 .titulo-categoria{
     color: #ee1d74;
-    font-size: large;
+    font-size: 30px;
+    padding: 10px;
 }
 
 .container {
@@ -115,20 +117,3 @@ del {
     border-radius: 10px;
 }
 
-  .carousel-inner {
-    padding: 1em;
-  }
-  .carousel-control-prev,
-  .carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  @media (min-width: 768px) {
-    .card img {
-      height: 11em;
-    }
-  }
