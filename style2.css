@@ -107,7 +107,9 @@ del {
     font-weight: bold;
     margin: 5px;
 }
-
+#cardapio{
+    position:relative;
+}
 #cardapio .contador-adicionar {
     display: inline;
     border: 1px solid black;
@@ -130,7 +132,7 @@ del {
 
 #cardapio .carousel-control-prev,
 #cardapio .carousel-control-next {
-    background-color: #e1e1e1;
+    background-color:black;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
@@ -148,6 +150,7 @@ del {
         margin-right: 0;
         flex: 0 0 50%;
         display: block;
+        width:200px;
     }
 }
 @media (min-width: 768px) {

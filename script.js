@@ -1,10 +1,11 @@
 
 // Script do cardápio carrosel
 var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-var cardWidth = $(".carousel-item").width();
+var cardWidth = $(".produto").width();
 var scrollPosition = 0;
 
 $(".carousel-control-next").on("click", function () {
+    console.log(carouselWidth,cardWidth,scrollPosition);
     if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
         scrollPosition += cardWidth;  //update scroll position
         $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
