@@ -139,7 +139,7 @@ form .form-control:focus {
 
 /*main*/
 
-.carousel-inner div{
+#contentCarousel .carousel-inner div{
     width: 80vw;
 }
 
