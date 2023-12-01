@@ -38,6 +38,7 @@
     max-width: min-content;
     border: 2px solid black;
     border-radius: 10px;
+    padding: 25px;
 }
 
 label {
@@ -155,16 +156,16 @@ del {
 }
 @media (min-width: 768px) {
     #cardapio .carousel-item {
-        flex: 0 0 33.333%;
+        flex: 0 0 50%;
     }
 }
 @media (min-width: 954px) {
     #cardapio .carousel-item {
-        flex: 0 0 25%;
+        flex: 0 0 33.333%;
     }
 }
 @media (min-width: 1020px) {
     #cardapio .carousel-item {
-        flex: 0 0 20%;
+        flex: 0 0 25%;
     }
 }
