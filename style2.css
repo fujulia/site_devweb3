@@ -1,15 +1,27 @@
 
 
+/*.cardapio{
+    background-image: url(b12b9862e9ef4c8fe11edb13e01a77cd-removebg-preview.png);
+    height: 370px;
+}*/
 .titulo-cadapio {
-    color: #FFB800;
-    font-size: 40px;
+    display: block;
+    color: #ffbb00;
+    font-size: 80px;
     padding: 20px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+   
 }
 
-.titulo-categoria{
+.categoria-cardapio{
     color: #ee1d74;
     font-size: 30px;
-    padding: 10px;
+    
+    font-weight: bold;
+    padding-left:2em;
 }
 
 #cardapio .container {
@@ -67,9 +79,10 @@ span {
    background: #e4347d;
    padding: 5px;
    border-radius: 10px;
-   font-size: x-small;
-   margin-left: 140px;
+   font-size: smaller;
+   margin-left: 190px;
    margin-top: 5px;
+   z-index: 2;
 }
 .informacoes-produtos{
     padding: 20px;
@@ -120,6 +133,7 @@ del {
 
 #cardapio .carousel-inner {
     padding: 4em;
+    padding-top: 1em;
 }
 
 #cardapio .card {
