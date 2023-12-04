@@ -115,7 +115,9 @@ del {
     border-radius: 10PX;
     padding: 5px;
 }
-
+.button-adicionar:hover{
+    background-color: #f5b2ce;
+}
 .button-adicionar>p {
     color: #ee1d74;
     font-weight: bold;
