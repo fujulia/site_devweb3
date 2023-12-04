@@ -4,30 +4,32 @@
     background-image: url(b12b9862e9ef4c8fe11edb13e01a77cd-removebg-preview.png);
     height: 370px;
 }*/
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300&display=swap');
 .titulo-cadapio {
-    display: block;
-    color: #ffbb00;
-    font-size: 80px;
+
+    color: #F2B705;
+    font-size: 50px;
     padding: 20px;
     font-weight: bold;
     justify-content: center;
     text-align: center;
     margin: 40px;
+    font-family: 'Poppins', sans-serif;
    
 }
 
 .categoria-cardapio{
-    color: #ee1d74;
+    color: #F28888;
     font-size: 30px;
-    
     font-weight: bold;
     padding-left:2em;
+    font-family: 'Poppins', sans-serif;
 }
 
 #cardapio .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-
 }
 
 #cardapio #produtos {
@@ -53,10 +55,6 @@
     padding: 25px;
 }
 
-label {
-    display: block;
-    padding: 10px;
-}
 
 span {
     display: block;
@@ -91,9 +89,7 @@ span {
     margin: 15px;
 }
 
-del {
-    text-align: center;
-}
+
 
 .preco-deletado {
     display: block;
@@ -123,6 +119,8 @@ del {
 }
 #cardapio{
     position:relative;
+    width: 80%;
+    margin: auto;
 }
 #cardapio .contador-adicionar {
     display: inline;
@@ -147,12 +145,16 @@ del {
 
 #cardapio .carousel-control-prev,
 #cardapio .carousel-control-next {
-    background-color:black;
+    background-color:#F28888;
     width: 6vh;
     height: 6vh;
     border-radius: 50%;
     top: 50%;
     transform: translateY(-50%);
+}
+
+a:hover{
+    color: var;
 }
 
 

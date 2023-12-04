@@ -11,7 +11,9 @@
     --font: 'Poppins', sans-serif;
 }
 
-h3 a, h1 a, h2 a {
+h3 a,
+h1 a,
+h2 a {
     color: var(--cor-texto);
     text-decoration: none;
 }
@@ -21,15 +23,26 @@ h3 a, h1 a, h2 a {
     font-size: 40px;
     color: var(--cor-texto);
 }
+
 /*header*/
 
+
 /*topo*/
-.topoSite{
+
+header i.bx-menu {
+    display: none;
+}
+.topoSite {
     height: auto;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
+
+}
+
+.topoSite h1 {
+    font-size: 20px;
 }
 
 .topoSite img {
@@ -61,13 +74,16 @@ h3 {
 /*topo fim*/
 
 /*nav*/
-nav {
+header nav {
     background-color: var(--cor-principal);
-    height: 6vh;
+    height: 60px;
     width: 100vw;
     display: flex;
     justify-content: space-between;
     padding: 0px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 form {
@@ -91,34 +107,52 @@ form .form-control:focus {
     border: 1px solid var(--cor-auxiliar);
 }
 
-.dropdown {
-    position: relative;
-    display: inline-block;
+.menu {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    font-size: 25px;
+    margin: 12px;
+    font-family: var(--font);
 }
 
-.dropdown-content {
-    display: none;
+.menu li {
+    position: relative;
+    margin-left: 25px;
+
+}
+
+.menu li a {
+    color: var(--font);
+    text-decoration: none;
+
+    display: block;
+}
+
+
+.menu li ul button:hover{
+    color: #F2B705;
+}
+
+.menu li ul {
     position: absolute;
     background-color: var(--cor-principal);
-    min-width: 160px;
-    padding-top: 20px;
-    z-index: 10;
-    position: fixed;
+
+    display: none;
 }
 
-.dropdown-content a {
-    color: black;
-    padding: 15px;
-    text-decoration: none;
+.menu li:hover ul,
+.menu li.over ul {
     display: block;
 }
 
-.dropdown-content a:hover {
-    background-color: #ffd5d5
-}
-
-.dropdown:hover .dropdown-content {
+.menu li ul li {
     display: block;
+    margin: 0;
+    padding: 10px 10px 5px 0;
+    width: 215px;
+    font-size: 22px;
+    background-color: var(--cor-principal);
 }
 
 .menu h2 {
@@ -129,32 +163,460 @@ form .form-control:focus {
     margin: 25px;
 }
 
-.menu {
-    display: flex;
-    align-items: center;
+
+nav button {
+    background-color: var(--cor-principal);
+    border: none;
+    font-weight: 300;
+   
 }
+
 /*nav fim*/
 
 /*header fim*/
 
 /*main*/
 
-#contentCarousel .carousel-inner div{
+#contentCarousel .carousel-inner div {
     width: 80vw;
 }
 
-#contentCarousel{
+#contentCarousel {
     width: 80%;
     margin: auto;
     margin-top: 5%;
     z-index: 1;
 }
 
-.itens img{
+.itens img {
     width: 30%;
 }
 
-.itens{
+.itens {
     width: 60%;
     margin: auto;
 }
+
+/*Cardapio */
+
+#cardapio {
+    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.titulo-cardapio {
+    color: var(--cor-auxiliar);
+    font-size: 50px;
+    padding: 20px;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    margin: 40px;
+    font-family: var(--font);
+
+}
+
+.categoria-cardapio {
+    color: var(--cor-principal);
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 2em;
+    font-family: var(--font);
+}
+
+#cardapio .container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+#cardapio #produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 70px;
+}
+
+#categorias {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    height: min-content;
+}
+
+#cardapio .produto {
+    display: inline;
+    max-width: min-content;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+span {
+    display: block;
+    font-weight: bold;
+    font-size: large;
+}
+
+.categoria-produto {
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+    font-size: small;
+}
+
+.imagem {
+    position: relative;
+}
+
+.desconto {
+    position: absolute;
+    border: 1px solid black;
+    color: var(--cor-auxiliar);
+    background: #ee6161;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: smaller;
+    margin-left: 190px;
+    margin-top: 5px;
+    z-index: 2;
+}
+
+.informacoes-produtos {
+    padding: 20px;
+}
+
+.precos {
+    margin: 15px;
+}
+
+.preco-deletado {
+    display: block;
+    text-align: center;
+}
+
+.preco {
+    display: block;
+    text-align: center;
+    font-size: x-large;
+    color: #ee6161;
+}
+
+.button-adicionar {
+    display: inline;
+    margin: 5px;
+    color: #ee6161;
+    background-color: #f2b705cc;
+    font-weight: bold;
+    border-radius: 10PX;
+    padding: 5px;
+}
+
+
+
+#cardapio .contador-adicionar {
+    display: inline;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#cardapio .carousel-inner {
+    padding: 4em;
+    padding-top: 1em;
+}
+
+#cardapio .card {
+    margin-left: 50%;
+    margin-right: 50%;
+    width: min-content;
+    margin: 0 .5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+}
+
+#cardapio .carousel-control-prev,
+#cardapio .carousel-control-next {
+    background-color: var(--cor-principal);
+    width: 6vh;
+    height: 6vh;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    justify-content: center;
+    display: flex;
+}
+
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 100%;
+    position: absolute;
+}
+
+#lojas {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#lojas h1,
+#sobre h1,
+#contato h1 {
+    color: var(--cor-principal);
+    font-family: var(--font);
+    font-size: 50px;
+}
+
+#lojas h2,
+#sobre h2,
+#contato h2 {
+    font-size: 30px;
+    color: var(--cor-auxiliar);
+    font-family: var(--font);
+}
+
+.bxs-map {
+    color: var(--cor-detalhes);
+}
+
+#lojas h3 {
+    display: block;
+    margin: 12px 0 10px 70px;
+}
+
+#sobre,
+#contato {
+    width: 90%;
+    margin: auto;
+}
+
+#sobre img,
+#contato img {
+    width: 95%;
+}
+
+#sobre p {
+    font-family: var(--font);
+    font-size: 25px;
+}
+
+#contato {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#contato form {
+    margin: 30px 0 0 60px;
+}
+
+#contato input,
+#msg {
+    margin: 12px;
+    font-size: 20px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid var(--cor-detalhes);
+    color: var(--cor-texto);
+}
+
+#msg{
+    width: 90%;
+}
+
+textarea:focus,
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#contato #enviar {
+    padding: 12px;
+    font-size: 22px;
+    background-color: var(--cor-principal);
+    border-radius: 15px;
+}
+
+footer {
+    background-color: var(--cor-principal);
+}
+
+footer i {
+    font-size: 25px;
+}
+
+a:hover {
+    color: var(--cor-texto);
+}
+
+/*RESPONSIVIDADE*/
+@media(max-width:966px){
+    h3 a {
+        font-size: 18px;
+    }
+
+    li{
+        font-size: 22px;
+    }
+
+    .menu li ul li{
+        font-size: 20px;
+    }
+
+    col {
+        flex: 2 0 0%;
+      }
+
+    .titulo-cardapio, #lojas h1, #sobre h1, #contato h1{
+        font-size: 40px;
+    }
+
+    .map-responsive {
+        margin-top: 30px;
+    }
+
+    #sobre img, #contato img{
+        display: none;
+    }
+
+    #lojas h2, #sobre h2, #contato h2{
+        font-size: 25px;
+    }
+
+    #contato {
+        margin-top: 60px;
+    }
+}
+
+@media(max-width:842px){
+    .topoSite img {
+        width: 50px;
+    }
+
+    .topoSite{
+        padding: 2px;
+    }
+
+    header nav{
+        padding: 0;
+    }
+    .menu{
+        display: none;
+        width: 100vw;
+    }
+
+    .menu.openMenu {
+        display: block;
+    }
+
+    header i.bx-menu {
+        display: block;
+        font-size: 50px;
+        margin: 10px 20px;
+        display: flex;
+        align-items: center;
+        color: var(--cor-geral);
+    }
+
+    header i.bx-x {
+        display: block;
+        font-size: 60px;
+        margin: 30px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        display: flex;
+        padding: 40px;
+        width: 100vw;
+        background-color: var(--cor-principal);
+    }
+
+
+}
+@media(max-width:360px) {
+    .topoSite h1 {
+        display: none;
+    }
+
+    .topoSite img {
+        width: 40px;
+    }
+
+    .topoSite {
+        padding: 0;
+    }
+
+    .contato h3 {
+        display: none;
+    }
+
+    .bx-user-circle,
+    .bx-cart {
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: var(--cor-texto);
+    }
+
+   
+ 
+
+
+}
+
+@media (min-width: 520px) {
+    #cardapio .carousel-inner {
+        display: flex;
+    }
+
+    #cardapio .carousel-item {
+        margin-right: 0;
+        flex: 0 0 50%;
+        display: block;
+        width: 200px;
+    }
+}
+
+@media (min-width: 768px) {
+    #cardapio .carousel-item {
+        flex: 0 0 50%;
+    }
+}
+
+@media (min-width: 1100px) {
+    #cardapio .carousel-item {
+        flex: 0 0 33.333%;
+    }
+}
+
+@media (min-width: 1100px) {
+    #cardapio .carousel-item {
+        flex: 0 0 34%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #cardapio .carousel-item {
+        flex: 0 0 33%;
+    }
+}
+
+@media (min-width: 1300px) {
+    #cardapio .carousel-item {
+        flex: 0 0 30%;
+    }
+}
+
