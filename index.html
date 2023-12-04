@@ -44,19 +44,19 @@
       </div>
       <div>
         <ul class="menu">
-              <li><a href="#">cardápio <i class='bx bx-down-arrow-alt'></i></a>
-                   <ul>
-                          <li><a href="#donutsDoces"><button>donuts doces</button></a></li>
-                          <li><a href="#donutsPremium"><button>donuts premium</button></a></li>
-                          <li><a href="#donutSalgado"><button>donuts salgados</button></a></li>
-                          <li><a href="#americanCookies"><button>american cookies</button></a></li>
-                          <li><a href="#canolliItaliano"><button>canolli italiano</button></a></li>
-                   </ul>
-            </li>
+          <li><a href="#">cardápio <i class='bx bx-down-arrow-alt'></i></a>
+            <ul>
+              <li><a href="#donutsDoces"><button>donuts doces</button></a></li>
+              <li><a href="#donutsPremium"><button>donuts premium</button></a></li>
+              <li><a href="#donutSalgado"><button>donuts salgados</button></a></li>
+              <li><a href="#americanCookies"><button>american cookies</button></a></li>
+              <li><a href="#canolliItaliano"><button>canolli italiano</button></a></li>
+            </ul>
+          </li>
           <li><a href="#lojas"><button>lojas</button></a></li>
           <li><a href="#sobre"><button>sobre</button></a></li>
           <li><a href="#contato"><button>contato</button></a></li>
-      </ul>
+        </ul>
       </div>
       <i class='bx bx-menu' onclick="openMenu()" id="menuH"></i>
     </nav>
@@ -137,115 +137,160 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
+                    <div id="contador">
+                      <button id="adicionar" class="button">
+                        +
+                      </button>
+                      <span id="valor">1</span>
+
+                      <button id="subtrair" class="button">
+                        -
                       </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg (2).png" width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Doces</span>
-                    <span>Baunilha</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg 11.png" width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Doces</span>
-                    <span>Doce de leite</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg 9.png" width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Doces</span>
-                    <span>Limão</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg.png" width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Doces</span>
-                    <span>Chocolate</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
+                    <button class="button-adicionar">
+                      <span>Adicionar</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <div class="card"> <span class="desconto">33% OFF</span>
+            <div class="produto">
+              <div class="imagem"> <img src="imagens/pngegg (2).png" width="210" height="210"> </div>
+              <div class="informacoes-produtos">
+                <div class=titulo-do-produto>
+                  <span class="categoria-produto">Donauts Doces</span>
+                  <span>Baunilha</span>
+                  <div class="precos">
+                    <del class="preco-deletado">R$23,99</del>
+                    <span class="preco">R$19,99</span>
+                  </div>
+                  <div id="contador">
+                    <button id="adicionar" class="button">
+                      +
+                    </button>
+                    <span id="valor">1</span>
+
+                    <button id="subtrair" class="button">
+                      -
+                    </button>
+                  </div>
+                  <button class="button-adicionar">
+                    <span>Adicionar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/pngegg 11.png" width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Doces</span>
+                <span>Doce de leite</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/pngegg 9.png" width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Doces</span>
+                <span>Limão</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/pngegg.png" width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Doces</span>
+                <span>Chocolate</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       </div>
       <h2 class="categoria-cardapio" id="donutsPremium">Donuts Premium</h2>
       <div id="carouselExampleControls" class="carousel ">
@@ -263,93 +308,129 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
+                    <div id="contador">
+                      <button id="adicionar" class="button">
+                        +
+                      </button>
+                      <span id="valor">1</span>
+
+                      <button id="subtrair" class="button">
+                        -
                       </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg (3).png" width="210" height="210" height="200px"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto"> Donauts Premium</span>
-                    <span>Café e Granulado</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg (4).png" width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Premium</span>
-                    <span>Morango e Granld.</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/pngegg 6.png" width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Premium</span>
-                    <span>Baunilha e Granld.</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
+                    <button class="button-adicionar">
+                      <span>Adicionar</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <div class="card"> <span class="desconto">33% OFF</span>
+            <div class="produto">
+              <div class="imagem"> <img src="imagens/pngegg (3).png" width="210" height="210" height="200px"> </div>
+              <div class="informacoes-produtos">
+                <div class=titulo-do-produto>
+                  <span class="categoria-produto"> Donauts Premium</span>
+                  <span>Café e Granulado</span>
+                  <div class="precos">
+                    <del class="preco-deletado">R$23,99</del>
+                    <span class="preco">R$19,99</span>
+                  </div>
+                  <div id="contador">
+                    <button id="adicionar" class="button">
+                      +
+                    </button>
+                    <span id="valor">1</span>
+
+                    <button id="subtrair" class="button">
+                      -
+                    </button>
+                  </div>
+                  <button class="button-adicionar">
+                    <span>Adicionar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/pngegg (4).png" width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Premium</span>
+                <span>Morango e Granld.</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/pngegg 6.png" width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Premium</span>
+                <span>Baunilha e Granld.</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       </div>
 
       <h2 class="categoria-cardapio" id="donutSalgado">Donuts Salgados</h2>
@@ -367,95 +448,131 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
+                    <div id="contador">
+                      <button id="adicionar" class="button">
+                        +
+                      </button>
+                      <span id="valor">1</span>
+
+                      <button id="subtrair" class="button">
+                        -
                       </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/o-traciodicionalissimo_donut_carne-seca-com-catupiry_01.png.webp"
-                    width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Salgados</span>
-                    <span>Carne e Requeijão</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/o-tradicionalissimo_donut_cheddar-com-bacon_04.png.webp"
-                    width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Salgados</span>
-                    <span>Cheddar e bacon</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/esse é bom.png" width="210" height="210" height="200px"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Donauts Salgados</span>
-                    <span>Sdch. Chdr. e Bacon</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
+                    <button class="button-adicionar">
+                      <span>Adicionar</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <div class="card"> <span class="desconto">33% OFF</span>
+            <div class="produto">
+              <div class="imagem"> <img src="imagens/o-traciodicionalissimo_donut_carne-seca-com-catupiry_01.png.webp"
+                  width="210" height="210"> </div>
+              <div class="informacoes-produtos">
+                <div class=titulo-do-produto>
+                  <span class="categoria-produto">Donauts Salgados</span>
+                  <span>Carne e Requeijão</span>
+                  <div class="precos">
+                    <del class="preco-deletado">R$23,99</del>
+                    <span class="preco">R$19,99</span>
+                  </div>
+                  <div id="contador">
+                    <button id="adicionar" class="button">
+                      +
+                    </button>
+                    <span id="valor">1</span>
+
+                    <button id="subtrair" class="button">
+                      -
+                    </button>
+                  </div>
+                  <button class="button-adicionar">
+                    <span>Adicionar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/o-tradicionalissimo_donut_cheddar-com-bacon_04.png.webp" width="210"
+                height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Salgados</span>
+                <span>Cheddar e bacon</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img src="imagens/esse é bom.png" width="210" height="210" height="200px"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">Donauts Salgados</span>
+                <span>Sdch. Chdr. e Bacon</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       </div>
       <h2 class="categoria-cardapio" id="americanCookies">American Cookies</h2>
       <div id="carouselExampleControls" class="carousel ">
@@ -474,99 +591,135 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
+                    <div id="contador">
+                      <button id="adicionar" class="button">
+                        +
+                      </button>
+                      <span id="valor">1</span>
+
+                      <button id="subtrair" class="button">
+                        -
                       </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img
-                    src="imagens/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsX29mZmljZV8zNF9mbGF0bGF5X29mX3JlZF92ZWx2ZXRfY29va2llX3dpdGhfd2hpdGVfY2hvY185Y2QyMjY4Ni0xZDVmLTRmYTktODNlNi02ZGYzZWI1NjVkNGQucG5n-removebg-previe.png"
-                    width="210" height="210" height="200px"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">American Cookies</span>
-                    <span>Red Velvet</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img
-                    src="imagens/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlMTlfZGFya19jaG9jb2xhdGVfc29mdF9jb29r-removebg-preview.png"
-                    width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">American Cookies</span>
-                    <span>Chocolate</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img
-                    src="imagens/kisspng-chocolate-chip-cookie-white-chocolate-peanut-butte-butter-5abbb55ac82093.7138731615222510988197.png"
-                    width="210" height="210"> </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">American Cookies</span>
-                    <span>Chocolate Branco</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
+                    <button class="button-adicionar">
+                      <span>Adicionar</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <div class="card"> <span class="desconto">33% OFF</span>
+            <div class="produto">
+              <div class="imagem"> <img
+                  src="imagens/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTEwL3Jhd3BpeGVsX29mZmljZV8zNF9mbGF0bGF5X29mX3JlZF92ZWx2ZXRfY29va2llX3dpdGhfd2hpdGVfY2hvY185Y2QyMjY4Ni0xZDVmLTRmYTktODNlNi02ZGYzZWI1NjVkNGQucG5n-removebg-previe.png"
+                  width="210" height="210" height="200px"> </div>
+              <div class="informacoes-produtos">
+                <div class=titulo-do-produto>
+                  <span class="categoria-produto">American Cookies</span>
+                  <span>Red Velvet</span>
+                  <div class="precos">
+                    <del class="preco-deletado">R$23,99</del>
+                    <span class="preco">R$19,99</span>
+                  </div>
+                  <div id="contador">
+                    <button id="adicionar" class="button">
+                      +
+                    </button>
+                    <span id="valor">1</span>
+
+                    <button id="subtrair" class="button">
+                      -
+                    </button>
+                  </div>
+                  <button class="button-adicionar">
+                    <span>Adicionar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img
+                src="imagens/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTExL3Jhd3BpeGVsb2ZmaWNlMTlfZGFya19jaG9jb2xhdGVfc29mdF9jb29r-removebg-preview.png"
+                width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">American Cookies</span>
+                <span>Chocolate</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="carousel-item">
+        <div class="card"> <span class="desconto">33% OFF</span>
+          <div class="produto">
+            <div class="imagem"> <img
+                src="imagens/kisspng-chocolate-chip-cookie-white-chocolate-peanut-butte-butter-5abbb55ac82093.7138731615222510988197.png"
+                width="210" height="210"> </div>
+            <div class="informacoes-produtos">
+              <div class=titulo-do-produto>
+                <span class="categoria-produto">American Cookies</span>
+                <span>Chocolate Branco</span>
+                <div class="precos">
+                  <del class="preco-deletado">R$23,99</del>
+                  <span class="preco">R$19,99</span>
+                </div>
+                <div id="contador">
+                  <button id="adicionar" class="button">
+                    +
+                  </button>
+                  <span id="valor">1</span>
+
+                  <button id="subtrair" class="button">
+                    -
+                  </button>
+                </div>
+                <button class="button-adicionar">
+                  <span>Adicionar</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       </div>
       <h2 class="categoria-cardapio" id="canolliItaliano">Cannoli Italiano</h2>
       <div id="carouselExampleControls" class="carousel ">
@@ -583,50 +736,68 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
+                    <div id="contador">
+                      <button id="adicionar" class="button">
+                        +
+                      </button>
+                      <span id="valor">1</span>
+
+                      <button id="subtrair" class="button">
+                        -
                       </button>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="card"> <span class="desconto">33% OFF</span>
-              <div class="produto">
-                <div class="imagem"> <img src="imagens/cannoli-siciliano-com-chocolate-26416195.webp" width="210">
-                </div>
-                <div class="informacoes-produtos">
-                  <div class=titulo-do-produto>
-                    <span class="categoria-produto">Cannoli Italiano</span>
-                    <span>Baunilha e Chocolt.</span>
-                    <div class="precos">
-                      <del class="preco-deletado">R$23,99</del>
-                      <span class="preco">R$19,99</span>
-                    </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
-                      <button class="button-adicionar">
-                        <span>Adicionar</span>
-                      </button>
-                    </div>
+                    <button class="button-adicionar">
+                      <span>Adicionar</span>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+        <div class="carousel-item">
+          <div class="card"> <span class="desconto">33% OFF</span>
+            <div class="produto">
+              <div class="imagem"> <img src="imagens/cannoli-siciliano-com-chocolate-26416195.webp" width="210">
+              </div>
+              <div class="informacoes-produtos">
+                <div class=titulo-do-produto>
+                  <span class="categoria-produto">Cannoli Italiano</span>
+                  <span>Baunilha e Chocolt.</span>
+                  <div class="precos">
+                    <del class="preco-deletado">R$23,99</del>
+                    <span class="preco">R$19,99</span>
+                  </div>
+                  <div id="contador">
+                    <button id="adicionar" class="button">
+                      +
+                    </button>
+                    <span id="valor">1</span>
+
+                    <button id="subtrair" class="button">
+                      -
+                    </button>
+                  </div>
+                  <button class="button-adicionar">
+                    <span>Adicionar</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
       </div>
     </section>
     <section class="row" id="lojas">
@@ -652,7 +823,8 @@
       </div>
     </section>
     <section class="row" id="sobre">
-      <div class="col-sm-12 col-md-12 col-lg-6"><img src="imagens/donuts-now4.jpg" alt="Imagem de uma das lojas donuts now"></div>
+      <div class="col-sm-12 col-md-12 col-lg-6"><img src="imagens/donuts-now4.jpg"
+          alt="Imagem de uma das lojas donuts now"></div>
       <div class="col-sm-12 col-md-12 col-lg-6 ">
         <h1>Sobre a donuts now</h1>
         <h2>Saiba a história da loja de donuts em nação</h2>
