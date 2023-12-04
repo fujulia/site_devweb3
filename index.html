@@ -44,19 +44,19 @@
       </div>
       <div>
         <ul class="menu">
-              <li><a href="#">cardápio <i class='bx bx-down-arrow-alt'></i></a>
-                   <ul>
-                          <li><a href="#donutsDoces"><button>donuts doces</button></a></li>
-                          <li><a href="#donutsPremium"><button>donuts premium</button></a></li>
-                          <li><a href="#donutSalgado"><button>donuts salgados</button></a></li>
-                          <li><a href="#americanCookies"><button>american cookies</button></a></li>
-                          <li><a href="#canolliItaliano"><button>canolli italiano</button></a></li>
-                   </ul>
-            </li>
+          <li><a href="#">cardápio <i class='bx bx-down-arrow-alt'></i></a>
+            <ul>
+              <li><a href="#donutsDoces"><button>donuts doces</button></a></li>
+              <li><a href="#donutsPremium"><button>donuts premium</button></a></li>
+              <li><a href="#donutSalgado"><button>donuts salgados</button></a></li>
+              <li><a href="#americanCookies"><button>american cookies</button></a></li>
+              <li><a href="#canolliItaliano"><button>canolli italiano</button></a></li>
+            </ul>
+          </li>
           <li><a href="#lojas"><button>lojas</button></a></li>
           <li><a href="#sobre"><button>sobre</button></a></li>
           <li><a href="#contato"><button>contato</button></a></li>
-      </ul>
+        </ul>
       </div>
       <i class='bx bx-menu' onclick="openMenu()" id="menuH"></i>
     </nav>
@@ -73,7 +73,7 @@
           <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
         </div>
 
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-casa="0">
           <div class="carousel-item active">
             <img src="imagens/propaganda3.png" alt="Los Angeles" class="d-block w-100">
           </div>
@@ -124,7 +124,7 @@
       <h1 class="titulo-cardapio">Cardápio</h1>
       <h2 class="categoria-cardapio" id="donutsDoces">Donuts Doces</h2>
       <div id="carouselExampleControls" class="carousel ">
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-casa="0">
           <div class="carousel-item active">
             <div class="card"> <span class="desconto">33% OFF</span>
               <div class="produto">
@@ -137,7 +137,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -159,7 +169,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -181,7 +201,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -203,7 +233,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -225,7 +265,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -249,7 +299,7 @@
       </div>
       <h2 class="categoria-cardapio" id="donutsPremium">Donuts Premium</h2>
       <div id="carouselExampleControls" class="carousel ">
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-casa="0">
           <div class="carousel-item active">
             <div class="card"> <span class="desconto">33% OFF</span>
               <div class="produto">
@@ -263,7 +313,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -285,7 +345,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -307,7 +377,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -331,16 +411,16 @@
                     </div>
                     <div class="adicionar-produto">
                       <div id="contador">
-                      <button id="adicionar" class="button">
+                        <button id="adicionar" class="button">
                           +
-                      </button>
-                      <span id="valor">1</span>
-              
-                      <button id="subtrair" class="button">
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
                           -
-                      </button>
-                  </div>
-                  <button class="button-adicionar">
+                        </button>
+                      </div>
+                      <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
                     </div>
@@ -364,7 +444,7 @@
 
       <h2 class="categoria-cardapio" id="donutSalgado">Donuts Salgados</h2>
       <div id="carouselExampleControls" class="carousel ">
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-casa="0">
           <div class="carousel-item active">
             <div class="card"> <span class="desconto">33% OFF</span>
               <div class="produto">
@@ -377,7 +457,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -400,7 +490,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -423,7 +523,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -445,7 +555,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -469,7 +589,7 @@
       </div>
       <h2 class="categoria-cardapio" id="americanCookies">American Cookies</h2>
       <div id="carouselExampleControls" class="carousel ">
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-casa="0">
           <div class="carousel-item active">
             <div class="card"> <span class="desconto">33% OFF</span>
               <div class="produto">
@@ -484,7 +604,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -508,7 +638,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -532,7 +672,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -556,7 +706,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -580,7 +740,7 @@
       </div>
       <h2 class="categoria-cardapio" id="canolliItaliano">Cannoli Italiano</h2>
       <div id="carouselExampleControls" class="carousel ">
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-casa="0">
           <div class="carousel-item active">
             <div class="card"> <span class="desconto">33% OFF</span>
               <div class="produto">
@@ -593,7 +753,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -616,7 +786,17 @@
                       <del class="preco-deletado">R$23,99</del>
                       <span class="preco">R$19,99</span>
                     </div>
-                    <div class="adicionar-produto"><span class="contador-adicionar">+ 1 -</span>
+                    <div class="adicionar-produto">
+                      <div id="contador">
+                        <button id="adicionar" class="button">
+                          +
+                        </button>
+                        <span id="valor">1</span>
+
+                        <button id="subtrair" class="button">
+                          -
+                        </button>
+                      </div>
                       <button class="button-adicionar">
                         <span>Adicionar</span>
                       </button>
@@ -662,7 +842,8 @@
       </div>
     </section>
     <section class="row" id="sobre">
-      <div class="col-sm-12 col-md-12 col-lg-6"><img src="imagens/donuts-now4.jpg" alt="Imagem de uma das lojas donuts now"></div>
+      <div class="col-sm-12 col-md-12 col-lg-6"><img src="imagens/donuts-now4.jpg"
+          alt="Imagem de uma das lojas donuts now"></div>
       <div class="col-sm-12 col-md-12 col-lg-6 ">
         <h1>Sobre a donuts now</h1>
         <h2>Saiba a história da loja de donuts em nação</h2>

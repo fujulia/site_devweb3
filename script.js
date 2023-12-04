@@ -5,20 +5,46 @@ var cardWidth = $(".produto").width();
 var scrollPosition = 0;
 
 $(".carousel-control-next").on("click", function () {
-    console.log(carouselWidth, cardWidth, scrollPosition);
-    if (scrollPosition < (carouselWidth - cardWidth * 4)) { //check if you can go any further
+    //var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+    var carrosel=$(this).siblings(".carousel-inner")[0];
+    var carouselWidth = $(this).siblings(".carousel-inner")[0].scrollWidth;
+
+    var cardWidth = $(this).siblings(".carousel-inner").find(".produto").width();
+    var scrollPosition = parseInt(carrosel.dataset.casa);
+    var numberCards= $(this).siblings(".carousel-inner").find(".produto").length;
+
+
+    console.log(carouselWidth, cardWidth, scrollPosition, carrosel.dataset.casa);
+    if (scrollPosition < (carouselWidth - cardWidth * numberCards)) { //check if you can go any further
         scrollPosition += cardWidth;  //update scroll position
-        $(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+        $(this).siblings(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600); //scroll left
+        carrosel.dataset.casa=scrollPosition;
     }
+    
+   // $(this).siblings(".carousel-inner")[0].data("scroll",scrollPosition);
 });
 
 $(".carousel-control-prev").on("click", function () {
+
+    //var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+    var carrosel=$(this).siblings(".carousel-inner")[0];
+    var carouselWidth = $(this).siblings(".carousel-inner")[0].scrollWidth;
+
+    var cardWidth = $(this).siblings(".carousel-inner").find(".produto").width();
+    var scrollPosition = parseInt(carrosel.dataset.casa);
+    var numberCards= $(this).siblings(".carousel-inner").find(".produto").length;
+
+
+
+
     if (scrollPosition > 0) {
         scrollPosition -= cardWidth;
-        $(".carousel-inner").animate(
+        /*$(".carousel-inner").animate(
             { scrollLeft: scrollPosition },
             600
-        );
+        );*/
+        $(this).siblings(".carousel-inner").animate({ scrollLeft: scrollPosition }, 600);
+        carrosel.dataset.casa=scrollPosition;
     }
 });
 var multipleCardCarousel = document.querySelector(
@@ -54,9 +80,10 @@ function openMenu() {
     }
 };
 
-const valor = document.getElementById('valor');
-const adicionar = document.getElementById('adicionar');
-const subtrair = document.getElementById('subtrair');
+
+const valor = document.getElementById(`valor`);
+const adicionar = document.getElementById(`adicionar`);
+const subtrair = document.getElementById(`subtrair`);
 let contador = 1;
 
 const adicionarvalor = () => {
@@ -72,4 +99,7 @@ subtrair.addEventListener('mousedown', () => {
         contador -= 1
     }
     adicionarvalor()
-}, 100)
+}, 100) 
+    
+
+
