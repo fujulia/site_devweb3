@@ -37,19 +37,39 @@ var carousel = new bootstrap.Carousel(multipleCardCarousel, {
     wrap: false,
 });
 
-function openMenu(){
-    if(window.innerWidth <= 950){
+function openMenu() {
+    if (window.innerWidth <= 950) {
         const menuburger = document.getElementById('menuH');
         const navlist = document.querySelector('.menu');
 
-        if(menuburger.classList.value.indexOf("bx-x") > -1){
+        if (menuburger.classList.value.indexOf("bx-x") > -1) {
             navlist.classList.remove("openMenu");
             menuburger.classList.remove("bx-x");
             menuburger.classList.add("bx-menu");
-        }else{
+        } else {
             navlist.classList.add("openMenu");
             menuburger.classList.remove("bx-menu");
             menuburger.classList.add("bx-x");
         }
     }
 };
+
+const valor = document.getElementById('valor');
+const adicionar = document.getElementById('adicionar');
+const subtrair = document.getElementById('subtrair');
+let contador = 1;
+
+const adicionarvalor = () => {
+    valor.innerHTML = contador;
+}
+
+adicionar.addEventListener('mousedown', () => {
+    contador++
+    adicionarvalor()
+}, 100)
+subtrair.addEventListener('mousedown', () => {
+    if (contador > 1) {
+        contador -= 1
+    }
+    adicionarvalor()
+}, 100)
