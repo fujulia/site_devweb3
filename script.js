@@ -100,6 +100,20 @@ subtrair.addEventListener('mousedown', () => {
     }
     adicionarvalor()
 }, 100) 
+
+const ullistButton = document.getElementById('ullistTopics');
+let verificador = 0;
+function openSubMenu(){
+    if(window.innerWidth <= 950){
+        verificador++
+        if(verificador%2 == 0){
+            ullistButton.style.display = "none"
+        }
+        else{
+            ullistButton.style.display = "block"
+        }
+    }
+}   
     
 
 
