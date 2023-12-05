@@ -137,7 +137,6 @@ form .form-control:focus {
 .menu li ul {
     position: absolute;
     background-color: var(--cor-principal);
-
     display: none;
 }
 
@@ -510,14 +509,38 @@ a:hover {
     }
     .menu{
         display: none;
-        width: 300px;
-        right: 240px;
-        top: 40px;
+        width: 200px;
+        top: 50px;
+        left: 0px;
         position: absolute;
-        width: 150px;
+        margin: 0px;
+        width: 100vw;
     }
 
     .menu.openMenu {
+        display: block;
+    }
+
+    .menu li{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .menu li ul {
+        padding-top: 20px;
+        position: relative;
+        top: 0;
+        background-color: var(--cor-principal);
+    }
+
+    ul{
+        padding-left: 0px;
+    }
+    
+    .menu li:hover ul,
+    .menu li.over ul {
         display: block;
     }
 
@@ -542,12 +565,36 @@ a:hover {
     li{
         display: flex;
         padding: 40px;
-        width: 200px;
         background-color: var(--cor-principal);
     }
 
     #ullistTopics{
         z-index: 10;
+    }
+
+    #spanCardapio{
+        font-size: 20px;
+    }
+
+    .menu li ul li {
+        align-items: center;
+        display: flex;
+      }
+
+      .menu li {
+        align-items: center;
+      }
+
+    li{
+        padding: 20px;
+    }
+
+    hr{
+        width: 100%;
+        background-color: var(--cor-geral);
+        opacity: 1;
+        margin: 0;
+
     }
 
 }
@@ -578,11 +625,6 @@ a:hover {
     a {
         color: var(--cor-texto);
     }
-
-   
- 
-
-
 }
 
 @media (min-width: 520px) {
