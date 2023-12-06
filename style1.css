@@ -626,19 +626,6 @@ a:hover {
         color: var(--cor-texto);
     }
 }
-
-@media (min-width: 520px) {
-    #cardapio .carousel-inner {
-        display: flex;
-    }
-
-    #cardapio .carousel-item {
-        margin-right: 0;
-        flex: 0 0 50%;
-        display: block;
-        width: 200px;
-    }
-}
 /*contador*/
 #contador{
     border: 1px solid black;
@@ -658,20 +645,116 @@ a:hover {
     display:inline
 }
 @media (min-width: 0px) {
+    #cardapio .carousel-inner {
+        display: flex;
+    }
+
+    #cardapio .carousel-item {
+        margin-right: 0;
+        flex: 0 0 50%;
+        display: block;
+        width: 200px;
+    }
+    .imagem>img{
+        width:100px;
+        height:100px
+    }
+    span{
+        font-size: medium;
+    }
+    .desconto{
+            font-size: xx-small;
+    margin-left: 100px;
+    }
+    .categoria-produto {
+        font-size: x-small;
+    }
+    #cardapio .informacoes-produtos {
+        padding: 0px;
+    }
+    #contador{
+        text-align: center;
+    }
+    .button{
+        padding: 0;
+    }
+    .preco{
+        font-size: large;
+    }
+    .adicionar{
+        font-size: 9px;
+    }
+    #cardapio .carousel-control-prev, #cardapio .carousel-control-next {
+        width: 4vh;
+        height: 4vh;
+    }
+    #cardapio .carousel-inner {
+        padding: 1em;
+    }
+}
+@media (min-width: 500px) {
+    #cardapio .carousel-item {
+        margin-right: 0;
+        flex: 0 0 33,333%;
+        display: block;
+        width: 200px;
+    }
+}
+    @media (min-width: 600px) {
+        #cardapio .carousel-item {
+            margin-right: 0;
+            flex: 0 0 26%;
+            display: block;
+            width: 200px;
+        }
+    
+}
+
+@media (min-width: 850px) {
     #cardapio .carousel-item {
         flex: 0 0 50%;
     }
-}
-
-@media (min-width: 1100px) {
-    #cardapio .carousel-item {
-        flex: 0 0 33.333%;
+    .imagem>img{
+        width:210px;
+        height:210px;
+    }
+    span{
+        font-size: large;
+    }
+    .desconto{
+        font-size: small;
+    margin-left: 190px;
+    }
+    .categoria-produto {
+        font-size: small;
+    }
+    #cardapio .informacoes-produtos {
+        padding: 20px;
+    }
+    #contador{
+        text-align: center;
+    }
+    .button{
+        padding: 5px;
+    }
+    .preco{
+        font-size: x-large;
+    }
+    .adicionar{
+        font-size: large;
+    }
+    #cardapio .carousel-control-prev, #cardapio .carousel-control-next {
+        width: 6vh;
+        height: 6vh;
+    }
+    #cardapio .carousel-inner {
+        padding: 4em;
     }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     #cardapio .carousel-item {
-        flex: 0 0 34%;
+        flex: 0 0 40%;
     }
 }
 
@@ -681,9 +764,13 @@ a:hover {
     }
 }
 
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
     #cardapio .carousel-item {
-        flex: 0 0 30%;
+        flex: 0 0 28%;
     }
 }
-
+@media (min-width: 1600px) {
+    #cardapio .carousel-item {
+        flex: 0 0 23%;
+    }
+}
