@@ -192,14 +192,18 @@ nav button {
     z-index: 1;
 }
 
-.row div {
+.linha div {
     width: 20%;
 }
 
-.row div img {
+.itens .linha img {
     width: 20%;
    
    
+}
+
+.linha{
+    display: flex;
 }
 
 .itens{
@@ -519,7 +523,7 @@ a:hover {
         margin-top: 30px;
     }
 
-    .row div img {
+    .itens .linha img {
         width: 30%;
        
     
@@ -659,7 +663,7 @@ a:hover {
 
    
 
-    .itens img{
+    .itens .linha img{
         width: 40% ;
     }
 
@@ -693,7 +697,7 @@ a:hover {
         display: none;
     }
 
-    .itens .row img{
+    .itens .linha img{
         width: 60%;
     }
 
@@ -716,8 +720,8 @@ a:hover {
 
 }
 @media(max-width:468px) {
-    .itens .row img{
-        width: 80%;
+    .itens  .linha img{
+        width: 60%;
     }
 
     .titulo-cardapio{
