@@ -16,7 +16,7 @@
 
   <link rel="shortcut icon" href="imagens/logo.webp" type="image/x-icon">
 
-  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="style/style.css">
 
 </head>
 
@@ -24,8 +24,8 @@
   <header>
     <section class="topoSite">
       <div class="logo p-3">
-        <a href="#"><img src="imagens/logo.webp" alt="Logo do site que é um donut"></a>
-        <h1 class="p-2"> <a href="#">D O N U T S N O W</a></h1>
+        <a href="index.html"><img src="imagens/logo.webp" alt="Logo do site que é um donut"></a>
+        <h1 class="p-2"> <a href="index.html">D O N U T S N O W</a></h1>
       </div>
       <div>
         <div class="contato"> <a href="#"><i class='bx bx-user-circle'></i></a>
@@ -46,19 +46,16 @@
         <ul class="menu">
           <li onclick="openSubMenu()" id="listTopics"><span id="spanCardapio">cardápio <i class='bx bx-down-arrow-alt'></i></span>
             <ul  id="ullistTopics">
-              <li><a href="#donutsDoces"><button>donuts doces</button></a></li>
-              <li><a href="#donutsPremium"><button>donuts premium</button></a></li>
-              <li><a href="#donutSalgado"><button>donuts salgados</button></a></li>
-              <li><a href="#americanCookies"><button>american cookies</button></a></li>
-              <li><a href="#canolliItaliano"><button>canolli italiano</button></a></li>
+              <li><a href="#donutsDoces">donuts doces</a></li>
+              <li><a href="#donutsPremium">donuts premium</a></li>
+              <li><a href="#donutSalgado">donuts salgados</a></li>
+              <li><a href="#americanCookies">american cookies</a></li>
+              <li><a href="#canolliItaliano">canolli italiano</a></li>
             </ul>
           </li>
-          <hr>
-          <li><a href="#lojas"><button>lojas</button></a></li>
-          <hr>
-          <li><a href="#sobre"><button>sobre</button></a></li>
-          <hr>
-          <li><a href="#contato"><button>contato</button></a></li>
+          <li><a href="#lojas">lojas</a></li>
+          <li><a href="#sobre">sobre</a></li>
+          <li><a href="#contato">contato</a></li>
         </ul>
       </div>
       <i class='bx bx-menu' onclick="openMenu()" id="menuH"></i>
@@ -100,25 +97,25 @@
     <!-- Outra forma de ir para o cardapio começo-->
     <section class="text-center mt-5 itens">
       <div class="linha">
-        <div class="">
-          <a href="#"><img src="imagens/donut.png" alt=""></a>
-          <h3 class="d-block fs-4"><a href="#">Donuts Doces</a></h3>
+        <div>
+          <a href="#donutsDoces"><img src="imagens/donut.png" alt=""></a>
+          <h3 class="d-block fs-4"><a href="#donutsDoces">Donuts Doces</a></h3>
         </div>
-        <div class="">
-          <a href="#"><img src="imagens/donut.png" alt=""></a>
-          <h3 class="d-block fs-4"><a href="#">Donuts Salgados</a></h3>
+        <div>
+          <a href="#donutsPremium"><img src="imagens/donut.png" alt=""></a>
+          <h3 class="d-block fs-4"><a href="#donutsPremium">Donuts Premium</a></h3>
         </div>
-        <div class=" ">
-          <a href="#"><img src="imagens/cookie.png" alt=""></a>
-          <h3 class="d-block fs-4"><a href="#">American Cookies</a></h3>
+        <div>
+          <a href="#donutSalgado"><img src="imagens/donut.png" alt=""></a>
+          <h3 class="d-block fs-4"><a href="#donutSalgado">Donuts Salgados</a></h3>
         </div>
-        <div class="">
-          <a href="#"><img src="imagens/cookie.png" alt=""></a>
-          <h3 class="d-block fs-4"><a href="#">Cookies de Nutella</a></h3>
+        <div>
+          <a href="#americanCookies"><img src="imagens/cookie.png" alt=""></a>
+          <h3 class="d-block fs-4"><a href="#americanCookies">American Cookies</a></h3>
         </div>
-        <div class="">
-          <a href="#"><img src="imagens/cannoli.png" alt=""></a>
-          <h3 class="d-block fs-4"><a href="#">Cannoli Italiano</a></h3>
+        <div>
+          <a href="#canolliItaliano"><img src="imagens/cannoli.png" alt=""></a>
+          <h3 class="d-block fs-4"><a href="#canolliItaliano">Cannoli Italiano</a></h3>
         </div>
       </div>
     </section>
@@ -969,16 +966,16 @@
             <!-- Grid column -->
             <div class="col-md-5 col-lg-4 ml-lg-0 text-center text-md-end">
               <!-- Facebook -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
                   class='bx bxl-facebook-square'></i></a>
 
               <!-- Gmail -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
                   class='bx bx-envelope'></i></a>
 
 
               <!-- Instagram -->
-              <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i
+              <a class="btn btn-outline-light btn-floating m-1 text-white" role="button"><i
                   class='bx bxl-instagram'></i>
               </a>
             </div>
@@ -993,7 +990,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="script.js"></script>
+  <script src="script/script.js"></script>
 </body>
 
 </html>
