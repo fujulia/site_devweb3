@@ -756,6 +756,10 @@ a:hover {
         width: 40px;
     }
 
+    .itens div{
+        margin-left: 0;
+    }
+
 }
 /*contador*/
 #contador{
