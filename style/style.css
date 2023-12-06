@@ -645,6 +645,9 @@ a:hover {
         align-items: center;
     }
 
+    a {
+        color: var(--cor-texto);
+    }
 
     .itens .linha img {
         width: 40%;
@@ -674,6 +677,7 @@ a:hover {
     #contato form {
         margin: 30px 0 0 0px;
     }
+
 }
 
 @media(max-width:604px) {
@@ -685,6 +689,7 @@ a:hover {
     .itens .linha img {
         width: 60%;
     }
+
 
     .titulo-cardapio {
         font-size: 30px;
@@ -702,7 +707,6 @@ a:hover {
 }
 
 @media(max-width:468px) {
-    
     .itens .linha img {
         width: 60%;
     }
