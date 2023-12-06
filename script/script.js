@@ -81,16 +81,16 @@ function openMenu() {
 };
 
 
-const valor = document.getElementById(`valor`);
-const adicionar = document.getElementById(`adicionar`);
-const subtrair = document.getElementById(`subtrair`);
+const valor = document.getElementsByClassName(`valor`);
+const somar = document.getElementsByClassName(`somar`);
+const subtrair = document.getElementsByClassName(`subtrair`);
 let contador = 1;
 
 const adicionarvalor = () => {
     valor.innerHTML = contador;
 }
 
-adicionar.addEventListener('mousedown', () => {
+somar.addEventListener('mousedown', () => {
     contador++
     adicionarvalor()
 }, 100)

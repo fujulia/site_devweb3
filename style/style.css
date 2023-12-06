@@ -213,7 +213,7 @@ nav button {
 
 /*Cardapio */
 
-#cardapio {
+.cardapio {
     position: relative;
     width: 80%;
     margin: auto;
@@ -239,12 +239,12 @@ nav button {
     font-family: var(--font);
 }
 
-#cardapio .container {
+.cardapio .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
 
-#cardapio #produtos {
+.cardapio #produtos {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -258,7 +258,7 @@ nav button {
     height: min-content;
 }
 
-#cardapio .produto {
+.cardapio .produto {
     display: inline;
     max-width: min-content;
     border: 2px solid black;
@@ -324,22 +324,24 @@ span {
     border-radius: 10PX;
     padding: 5px;
 }
+.button-adicionar:hover{
+    background-color: #ffdb70cc;
+}
 
 
-
-#cardapio .contador-adicionar {
+.cardapio .contador-adicionar {
     display: inline;
     border: 1px solid black;
     padding: 5px;
     border-radius: 10px;
 }
 
-#cardapio .carousel-inner {
+.cardapio .carousel-inner {
     padding: 4em;
     padding-top: 1em;
 }
 
-#cardapio .card {
+.cardapio .card {
     margin-left: 50%;
     margin-right: 50%;
     width: min-content;
@@ -348,8 +350,8 @@ span {
     border: none;
 }
 
-#cardapio .carousel-control-prev,
-#cardapio .carousel-control-next {
+.cardapio .carousel-control-prev,
+.cardapio .carousel-control-next {
     background-color: var(--cor-principal);
     width: 6vh;
     height: 6vh;
@@ -631,7 +633,7 @@ a:hover {
         margin: 0;
 
     }
-
+    
 }
 @media(max-width:778px){
     .topoSite h1 {
@@ -768,7 +770,7 @@ a:hover {
 
 }
 /*contador*/
-#contador{
+.contador{
     border: 1px solid black;
     border-radius: 10px;
     display:inline;
@@ -782,15 +784,15 @@ a:hover {
 .button:hover{
     color:rgb(255, 208, 0);
 }
-#valor{
+.valor{
     display:inline
 }
 @media (min-width: 0px) {
-    #cardapio .carousel-inner {
+    .cardapio .carousel-inner {
         display: flex;
     }
 
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         margin-right: 0;
         flex: 0 0 50%;
         display: block;
@@ -801,7 +803,7 @@ a:hover {
         height:100px
     }
     span{
-        font-size: medium;
+        font-size: small;
     }
     .desconto{
             font-size: xx-small;
@@ -810,10 +812,10 @@ a:hover {
     .categoria-produto {
         font-size: x-small;
     }
-    #cardapio .informacoes-produtos {
+    .cardapio .informacoes-produtos {
         padding: 0px;
     }
-    #contador{
+    .contador{
         text-align: center;
     }
     .button{
@@ -825,16 +827,19 @@ a:hover {
     .adicionar{
         font-size: 9px;
     }
-    #cardapio .carousel-control-prev, #cardapio .carousel-control-next {
+    .cardapio .carousel-control-prev, .cardapio .carousel-control-next {
         width: 4vh;
         height: 4vh;
     }
-    #cardapio .carousel-inner {
+    .cardapio .carousel-inner {
         padding: 1em;
+    }
+    #contentCarousel {
+        width: 90%;
     }
 }
 @media (min-width: 500px) {
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         margin-right: 0;
         flex: 0 0 33,333%;
         display: block;
@@ -842,7 +847,7 @@ a:hover {
     }
 }
     @media (min-width: 600px) {
-        #cardapio .carousel-item {
+        .cardapio .carousel-item {
             margin-right: 0;
             flex: 0 0 26%;
             display: block;
@@ -852,7 +857,7 @@ a:hover {
 }
 
 @media (min-width: 850px) {
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         flex: 0 0 50%;
     }
     .imagem>img{
@@ -869,10 +874,10 @@ a:hover {
     .categoria-produto {
         font-size: small;
     }
-    #cardapio .informacoes-produtos {
+    .cardapio .informacoes-produtos {
         padding: 20px;
     }
-    #contador{
+    .contador{
         text-align: center;
     }
     .button{
@@ -884,34 +889,37 @@ a:hover {
     .adicionar{
         font-size: large;
     }
-    #cardapio .carousel-control-prev, #cardapio .carousel-control-next {
+    .cardapio .carousel-control-prev, .cardapio .carousel-control-next {
         width: 6vh;
         height: 6vh;
     }
-    #cardapio .carousel-inner {
+    .cardapio .carousel-inner {
         padding: 4em;
+    }
+    .cannoli-button{
+        display:none
     }
 }
 
 @media (min-width: 1000px) {
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         flex: 0 0 40%;
     }
 }
 
 @media (min-width: 1200px) {
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         flex: 0 0 33%;
     }
 }
 
 @media (min-width: 1400px) {
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         flex: 0 0 28%;
     }
 }
 @media (min-width: 1600px) {
-    #cardapio .carousel-item {
+    .cardapio .carousel-item {
         flex: 0 0 23%;
     }
 }
