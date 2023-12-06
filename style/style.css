@@ -29,9 +29,11 @@ h2 a {
 
 /*topo*/
 
-header i.bx-menu,  header i.bx-x {
+header i.bx-menu,
+header i.bx-x {
     display: none;
 }
+
 .topoSite {
     height: auto;
     width: 100vw;
@@ -75,11 +77,12 @@ h3 {
 
 /*nav*/
 
-#spanCardapio{
+#spanCardapio {
     font-size: 25px;
     font-weight: 300;
     color: var(--cor-texto);
 }
+
 header nav {
     background-color: var(--cor-principal);
     height: 60px;
@@ -129,13 +132,13 @@ form .form-control:focus {
 }
 
 .menu li a {
-    color: var(--font);
+    color: black;
     text-decoration: none;
     display: block;
 }
 
 
-.menu li ul button:hover{
+.menu li ul a:hover {
     color: #F2B705;
 }
 
@@ -167,14 +170,6 @@ form .form-control:focus {
     margin: 25px;
 }
 
-
-nav button {
-    background-color: var(--cor-principal);
-    border: none;
-    font-weight: 300;
-   
-}
-
 /*nav fim*/
 
 /*header fim*/
@@ -192,26 +187,21 @@ nav button {
     z-index: 1;
 }
 
-.linha div {
-    width: 20%;
-}
-
+.linha div,
 .itens .linha img {
     width: 20%;
-   
-   
 }
 
-.linha{
+.linha {
     display: flex;
 }
 
-.itens{
-   width: 80%;
-   margin: auto;
+.itens {
+    width: 80%;
+    margin: auto;
 }
 
-/*Cardapio */
+/*Cardapio - começo */
 
 .cardapio {
     position: relative;
@@ -324,7 +314,8 @@ span {
     border-radius: 10PX;
     padding: 5px;
 }
-.button-adicionar:hover{
+
+.button-adicionar:hover {
     background-color: #ffdb70cc;
 }
 
@@ -359,6 +350,9 @@ span {
     top: 50%;
     transform: translateY(-50%);
 }
+
+/*Cardapio - fim */
+
 
 .map-responsive {
     overflow: hidden;
@@ -444,7 +438,7 @@ span {
     color: var(--cor-texto);
 }
 
-#msg{
+#msg {
     width: 90%;
 }
 
@@ -474,24 +468,24 @@ a:hover {
 }
 
 /*RESPONSIVIDADE*/
-@media(max-width:996px){
+@media(max-width:996px) {
     h3 a {
         font-size: 18px;
     }
 
-    li, #spanCardapio{
+    li,
+    #spanCardapio {
         font-size: 22px;
     }
 
-    .menu li ul li{
+    .menu li ul li {
         font-size: 20px;
     }
 
-    col {
-        flex: 2 0 0%;
-      }
-
-    .titulo-cardapio, #lojas h1, #sobre h1, #contato h1{
+    .titulo-cardapio,
+    #lojas h1,
+    #sobre h1,
+    #contato h1 {
         font-size: 40px;
     }
 
@@ -499,11 +493,14 @@ a:hover {
         margin-top: 30px;
     }
 
-    #sobre img, #contato img{
+    #sobre img,
+    #contato img {
         display: none;
     }
 
-    #lojas h2, #sobre h2, #contato h2{
+    #lojas h2,
+    #sobre h2,
+    #contato h2 {
         font-size: 25px;
     }
 
@@ -516,35 +513,30 @@ a:hover {
         margin: auto;
     }
 
-    .itens div{
+    .itens div {
         margin: 0;
-    }
-
-    .itens .centralizar{
-        margin: auto;
-        margin-top: 30px;
     }
 
     .itens .linha img {
         width: 30%;
-       
-    
-}
+
+    }
 }
 
-@media(max-width:842px){
+@media(max-width:842px) {
     .topoSite img {
         width: 50px;
     }
 
-    .topoSite{
+    .topoSite {
         padding: 2px;
     }
 
-    header nav{
+    header nav {
         padding: 0;
     }
-    .menu{
+
+    .menu {
         display: none;
         width: 200px;
         top: 50px;
@@ -558,7 +550,7 @@ a:hover {
         display: block;
     }
 
-    .menu li{
+    .menu li {
         position: relative;
         display: flex;
         flex-direction: column;
@@ -572,10 +564,10 @@ a:hover {
         background-color: var(--cor-principal);
     }
 
-    ul{
+    ul {
         padding-left: 0px;
     }
-    
+
     .menu li:hover ul,
     .menu li.over ul {
         display: block;
@@ -599,43 +591,37 @@ a:hover {
         color: var(--cor-geral);
     }
 
-    li{
+    li {
         display: flex;
         padding: 40px;
         background-color: var(--cor-principal);
     }
 
-    #ullistTopics{
+    #ullistTopics {
         z-index: 10;
     }
 
-    #spanCardapio{
+    #spanCardapio {
         font-size: 20px;
     }
 
     .menu li ul li {
         align-items: center;
         display: flex;
-      }
+    }
 
-      .menu li {
+    .menu li {
         align-items: center;
-      }
+    }
 
-    li{
+    li {
         padding: 20px;
     }
 
-    hr{
-        width: 100%;
-        background-color: var(--cor-geral);
-        opacity: 1;
-        margin: 0;
-
-    }
-    
 }
-@media(max-width:778px){
+
+@media(max-width:778px) {
+
     .topoSite h1 {
         display: none;
     }
@@ -659,103 +645,104 @@ a:hover {
         align-items: center;
     }
 
-    a {
-        color: var(--cor-texto);
-    }
 
-   
-
-    .itens .linha img{
-        width: 40% ;
+    .itens .linha img {
+        width: 40%;
     }
 
     .categoria-cardapio {
         font-size: 25px;
         padding-left: 1em;
         margin-top: 20px;
-      }
-    
-      .titulo-cardapio, #lojas h1, #sobre h1, #contato h1{
-        font-size: 30px;
-      }
+    }
 
-    #lojas h3{
+    .titulo-cardapio,
+    #lojas h1,
+    #sobre h1,
+    #contato h1 {
+        font-size: 30px;
+    }
+
+    #lojas h3 {
         margin: 20px 0 10px 20px;
     }
 
-    #sobre p{
+    #sobre p {
         font-size: 20px;
     }
 
-    #contato form{
+    #contato form {
         margin: 30px 0 0 0px;
     }
-
 }
 
-@media(max-width:604px){
+@media(max-width:604px) {
 
-    .itens h3 a{
+    .itens h3 a {
         display: none;
     }
 
-    .itens .linha img{
+    .itens .linha img {
         width: 60%;
     }
 
-    .itens .centralizar{
-        margin-top:0;
-    }
-
-    .titulo-cardapio{
+    .titulo-cardapio {
         font-size: 30px;
         margin: 15px;
     }
 
-    .categoria-cardapio{
+    .categoria-cardapio {
         margin-top: 10px;
     }
 
-    #lojas h3{
+    #lojas h3 {
         margin: 10px 0 10px 20px;
     }
 
 }
+
 @media(max-width:468px) {
-    .itens  .linha img{
+    
+    .itens .linha img {
         width: 60%;
     }
 
-    .titulo-cardapio{
+    .titulo-cardapio {
         font-size: 25px;
         margin-top: 10px;
         padding: 15px;
         font-weight: 300;
     }
 
-    .categoria-cardapio{
+    .categoria-cardapio {
         margin-top: 5px;
         font-size: 20px;
         font-weight: 700;
     }
 
-    #lojas h1, #sobre h1, #contato h1{
+    #lojas h1,
+    #sobre h1,
+    #contato h1 {
         font-size: 25px;
     }
 
-    #lojas h2, #sobre h2, #contato h2{
+    #lojas h2,
+    #sobre h2,
+    #contato h2 {
         font-size: 20px;
     }
 
-    #lojas h3, #sobre p{
+    #lojas h3,
+    #sobre p {
         font-size: 18px;
     }
 
-    #contato input, #msg{
+    #contato input,
+    #msg {
         font-size: 18px;
     }
 
-    #contato #enviar{
+    #contato #enviar {
         width: 25%;
         font-size: 18px;
     }
@@ -764,29 +751,39 @@ a:hover {
         width: 40px;
     }
 
-    .itens div{
+    .itens div {
         margin-left: 0;
     }
 
+    header i.bx-menu,
+    header i.bx-x {
+        margin: 10px 10px;
+    }
+
 }
+
 /*contador*/
-.contador{
+.contador {
     border: 1px solid black;
     border-radius: 10px;
-    display:inline;
+    display: inline;
     padding: 2px;
 }
-.button{
+
+.button {
     border: none;
     background-color: rgba(245, 245, 220, 0);
-    color:rgb(240, 37, 148)
+    color: rgb(240, 37, 148)
 }
-.button:hover{
-    color:rgb(255, 208, 0);
+
+.button:hover {
+    color: rgb(255, 208, 0);
 }
-.valor{
-    display:inline
+
+.valor {
+    display: inline
 }
+
 @media (min-width: 0px) {
     .cardapio .carousel-inner {
         display: flex;
@@ -798,106 +795,134 @@ a:hover {
         display: block;
         width: 200px;
     }
-    .imagem>img{
-        width:100px;
-        height:100px
+
+    .imagem>img {
+        width: 100px;
+        height: 100px
     }
-    span{
+
+    span {
         font-size: small;
     }
-    .desconto{
-            font-size: xx-small;
-    margin-left: 100px;
+
+    .desconto {
+        font-size: xx-small;
+        margin-left: 100px;
     }
+
     .categoria-produto {
         font-size: x-small;
     }
+
     .cardapio .informacoes-produtos {
         padding: 0px;
     }
-    .contador{
+
+    .contador {
         text-align: center;
     }
-    .button{
+
+    .button {
         padding: 0;
     }
-    .preco{
+
+    .preco {
         font-size: large;
     }
-    .adicionar{
+
+    .adicionar {
         font-size: 9px;
     }
-    .cardapio .carousel-control-prev, .cardapio .carousel-control-next {
+
+    .cardapio .carousel-control-prev,
+    .cardapio .carousel-control-next {
         width: 4vh;
         height: 4vh;
     }
+
     .cardapio .carousel-inner {
         padding: 1em;
     }
-    #contentCarousel {
+
+    .cardapio {
         width: 90%;
     }
 }
+
 @media (min-width: 500px) {
     .cardapio .carousel-item {
         margin-right: 0;
-        flex: 0 0 33,333%;
+        flex: 0 0 33, 333%;
         display: block;
         width: 200px;
     }
 }
-    @media (min-width: 600px) {
-        .cardapio .carousel-item {
-            margin-right: 0;
-            flex: 0 0 26%;
-            display: block;
-            width: 200px;
-        }
-    
+
+@media (min-width: 600px) {
+    .cardapio .carousel-item {
+        margin-right: 0;
+        flex: 0 0 26%;
+        display: block;
+        width: 200px;
+    }
+
 }
 
 @media (min-width: 850px) {
     .cardapio .carousel-item {
         flex: 0 0 50%;
     }
-    .imagem>img{
-        width:210px;
-        height:210px;
+
+    .imagem>img {
+        width: 210px;
+        height: 210px;
     }
-    span{
+
+    span {
         font-size: large;
     }
-    .desconto{
+
+    .desconto {
         font-size: small;
-    margin-left: 190px;
+        margin-left: 190px;
     }
+
     .categoria-produto {
         font-size: small;
     }
+
     .cardapio .informacoes-produtos {
         padding: 20px;
     }
-    .contador{
+
+    .contador {
         text-align: center;
     }
-    .button{
+
+    .button {
         padding: 5px;
     }
-    .preco{
+
+    .preco {
         font-size: x-large;
     }
-    .adicionar{
+
+    .adicionar {
         font-size: large;
     }
-    .cardapio .carousel-control-prev, .cardapio .carousel-control-next {
+
+    .cardapio .carousel-control-prev,
+    .cardapio .carousel-control-next {
         width: 6vh;
         height: 6vh;
     }
+
     .cardapio .carousel-inner {
         padding: 4em;
     }
-    .cannoli-button{
-        display:none
+
+    .cannoli-button {
+        display: none
     }
 }
 
@@ -918,6 +943,7 @@ a:hover {
         flex: 0 0 28%;
     }
 }
+
 @media (min-width: 1600px) {
     .cardapio .carousel-item {
         flex: 0 0 23%;
