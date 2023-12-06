@@ -74,6 +74,12 @@ h3 {
 /*topo fim*/
 
 /*nav*/
+
+#spanCardapio{
+    font-size: 25px;
+    font-weight: 300;
+    color: var(--cor-texto);
+}
 header nav {
     background-color: var(--cor-principal);
     height: 60px;
@@ -192,8 +198,14 @@ nav button {
 }
 
 .itens {
-    width: 60%;
+    width: 70%;
     margin: auto;
+   
+}
+
+.itens div{
+    margin: 10px;
+    margin-left: 20px;
 }
 
 /*Cardapio */
@@ -457,12 +469,12 @@ a:hover {
 }
 
 /*RESPONSIVIDADE*/
-@media(max-width:966px){
+@media(max-width:996px){
     h3 a {
         font-size: 18px;
     }
 
-    li{
+    li, #spanCardapio{
         font-size: 22px;
     }
 
@@ -493,6 +505,21 @@ a:hover {
     #contato {
         margin-top: 60px;
     }
+
+    .itens {
+        width: 80%;
+        margin: auto;
+    }
+
+    .itens div{
+        margin: 0;
+    }
+
+    .itens .centralizar{
+        margin: auto;
+        margin-top: 30px;
+    }
+    
 }
 
 @media(max-width:842px){
@@ -598,13 +625,13 @@ a:hover {
     }
 
 }
-@media(max-width:360px) {
+@media(max-width:778px){
     .topoSite h1 {
         display: none;
     }
 
     .topoSite img {
-        width: 40px;
+        width: 50px;
     }
 
     .topoSite {
@@ -625,6 +652,110 @@ a:hover {
     a {
         color: var(--cor-texto);
     }
+
+    .itens .row{
+        width: 20%;
+        display: block ruby;
+    }
+
+    .itens img{
+        width: 40% ;
+    }
+
+    .categoria-cardapio {
+        font-size: 25px;
+        padding-left: 1em;
+        margin-top: 20px;
+      }
+    
+      .titulo-cardapio, #lojas h1, #sobre h1, #contato h1{
+        font-size: 30px;
+      }
+
+    #lojas h3{
+        margin: 20px 0 10px 20px;
+    }
+
+    #sobre p{
+        font-size: 20px;
+    }
+
+    #contato form{
+        margin: 30px 0 0 0px;
+    }
+
+}
+
+@media(max-width:604px){
+
+    .itens h3 a{
+        display: none;
+    }
+
+    .itens img{
+        width: 60%;
+    }
+
+    .itens .centralizar{
+        margin-top:0;
+    }
+
+    .titulo-cardapio{
+        font-size: 30px;
+        margin: 15px;
+    }
+
+    .categoria-cardapio{
+        margin-top: 10px;
+    }
+
+    #lojas h3{
+        margin: 10px 0 10px 20px;
+    }
+
+}
+@media(max-width:468px) {
+    .itens img{
+        width: 80%;
+    }
+
+    .titulo-cardapio{
+        font-size: 25px;
+        margin-top: 10px;
+        padding: 15px;
+    }
+
+    .categoria-cardapio{
+        margin-top: 5px;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    #lojas h1, #sobre h1, #contato h1{
+        font-size: 25px;
+    }
+
+    #lojas h2, #sobre h2, #contato h2{
+        font-size: 20px;
+    }
+
+    #lojas h3, #sobre p{
+        font-size: 18px;
+    }
+
+    #contato input, #msg{
+        font-size: 18px;
+    }
+
+    #contato #enviar{
+        width: 25%;
+        font-size: 18px;
+    }
+
+    .topoSite img {
+        width: 40px;
+    }
+
 }
 /*contador*/
 #contador{
