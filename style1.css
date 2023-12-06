@@ -131,7 +131,6 @@ form .form-control:focus {
 .menu li a {
     color: var(--font);
     text-decoration: none;
-
     display: block;
 }
 
@@ -193,19 +192,19 @@ nav button {
     z-index: 1;
 }
 
-.itens img {
-    width: 30%;
+.row div {
+    width: 20%;
 }
 
-.itens {
-    width: 70%;
-    margin: auto;
+.row div img {
+    width: 20%;
+   
    
 }
 
-.itens div{
-    margin: 10px;
-    margin-left: 20px;
+.itens{
+   width: 80%;
+   margin: auto;
 }
 
 /*Cardapio */
@@ -519,7 +518,12 @@ a:hover {
         margin: auto;
         margin-top: 30px;
     }
+
+    .row div img {
+        width: 30%;
+       
     
+}
 }
 
 @media(max-width:842px){
@@ -653,10 +657,7 @@ a:hover {
         color: var(--cor-texto);
     }
 
-    .itens .row{
-        width: 20%;
-        display: block ruby;
-    }
+   
 
     .itens img{
         width: 40% ;
@@ -692,7 +693,7 @@ a:hover {
         display: none;
     }
 
-    .itens img{
+    .itens .row img{
         width: 60%;
     }
 
@@ -715,7 +716,7 @@ a:hover {
 
 }
 @media(max-width:468px) {
-    .itens img{
+    .itens .row img{
         width: 80%;
     }
 
@@ -723,6 +724,7 @@ a:hover {
         font-size: 25px;
         margin-top: 10px;
         padding: 15px;
+        font-weight: 300;
     }
 
     .categoria-cardapio{
