@@ -863,8 +863,10 @@
     <section class="row" id="contato">
       <div class="col-sm-12 col-md-12 col-lg-6">
         <h1>Contato</h1>
-        <h2>Entre em contato conosco</h2>
-        <form>
+        <!-- <h2></h2> -->
+        <form method="get" action="#">
+          <fieldset>
+          <legend>Entre em contato conosco</legend>
           <div>
             <input type="text" name="nome" placeholder="Nome">
           </div>
@@ -874,9 +876,11 @@
           <div>
             <textarea id="msg" name="msg" rows="3" placeholder="Mensagem"></textarea>
           </div>
+          <div><label><input type="checkbox" name="notificacao"> Desejo receber notificações por email</label></div>
           <div>
             <input type="submit" value="Enviar" id="enviar">
           </div>
+        </fieldset>
         </form>
       </div>
       <div class="col-sm-12 col-md-6 ">

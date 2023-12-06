@@ -856,7 +856,7 @@ a:hover {
 @media (min-width: 500px) {
     .cardapio .carousel-item {
         margin-right: 0;
-        flex: 0 0 33, 333%;
+        flex: 0 0 33.333%;
         display: block;
         width: 200px;
     }
